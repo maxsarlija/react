@@ -1,3 +1,5 @@
+import {Button, Container, Form, FormControl, Nav, NavDropdown, Navbar} from 'react-bootstrap';
+
 import CartWidget from '../components/CartWidget';
 
 function Header () {
@@ -33,6 +35,7 @@ function Header () {
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
           <CartWidget />
+          b
           
         </div>
       </nav>
