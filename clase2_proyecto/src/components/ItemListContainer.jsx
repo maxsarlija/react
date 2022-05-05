@@ -8,3 +8,10 @@ export default function ItemListContainer( { greeting } ) {
     
     )
 }
+
+const task = new Promise((resolve,reject) => {
+      console.log("new promise")
+  //acciones
+      resolve('200 ok')
+    })
+  
