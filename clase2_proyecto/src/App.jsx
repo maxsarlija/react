@@ -11,6 +11,10 @@ import logo from './logo.svg'
 import { useState } from 'react'
 
 function App() {
+  const onAdd = () => {
+    console.log("Añadido al carrito")
+  }
+  
   return (
     <div className="App">
       <Header />

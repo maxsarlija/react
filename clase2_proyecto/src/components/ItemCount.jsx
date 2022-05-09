@@ -23,7 +23,7 @@ export const ItemCount = ({initial,stock,onAdd}) => {
   return (
       <div>
       <button class="btn btn-primary" onClick={btnrestar}>-</button>
-      <input type="text"  placeholder={numero}/>
+      <input type="text"  placeholder={"Ingrese un numero"}/>
       <button class="btn btn-primary" onClick={btnsumar}>+</button>
       <button class="btn btn-primary" onClick={restablecer}>Restablecer</button>
       <br></br>
