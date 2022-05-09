@@ -17,13 +17,15 @@ export const ItemCount = ({initial,stock,onAdd}) => {
 
     function btnrestar (){
         
-        if (count < stock){
-            setCount(stock)
+        if (count <= initial)
+        {
+            setCount(initial)
             console.log("Lo siento el pedido minimo es 1")
         }
         else{
+        
             setCount(count - 1)
-        console.log(initial)
+            console.log(initial)
         }
         
     }
@@ -38,7 +40,7 @@ export const ItemCount = ({initial,stock,onAdd}) => {
   return (
       <div>
       <button class="btn btn-primary" onClick={btnrestar}>-</button>
-      <input type="text"  placeholder={"Ingrese un numero"}/>
+      <input type="text"  placeholder={count}/>
       <button class="btn btn-primary" onClick={btnsumar}>+</button>
       <button class="btn btn-primary" onClick={restablecer}>Restablecer</button>
       <br></br>
