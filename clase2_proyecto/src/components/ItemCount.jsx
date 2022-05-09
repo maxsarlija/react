@@ -4,13 +4,28 @@ export const ItemCount = ({initial,stock,onAdd}) => {
     const [count, setCount] = useState(initial)
    
     function btnsumar (){
-        setCount(count + 1)
+        
+        if (count > stock - 1){
+            setCount(stock)
+            console.log("Lo siento no disponemos de stock")
+         }
+         else{
+            setCount(count + 1)       
+        }
         console.log(count)
     }
 
     function btnrestar (){
-        setCount(count - 1)
-        console.log(count)
+        
+        if (count < stock){
+            setCount(stock)
+            console.log("Lo siento el pedido minimo es 1")
+        }
+        else{
+            setCount(count - 1)
+        console.log(initial)
+        }
+        
     }
  
     function restablecer () {
